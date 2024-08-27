@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.form {
+    background-color: rgba(255, 83, 3, 0.808);
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 2rem .7rem .7rem .7rem;
+    text-align: center;
+    font-size: 1.125rem;
+    max-width: 320pxs;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border-color: black;
+}
+
+.label:hover {
+    background-color: rgb(185, 180, 180);
+}
+
+.span {
+    transition: color .2s ease-in-out;
+}
+
+#file-input {
+    width: 350px;
+    max-width: 100%;
+    color: black ;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    border: 1px solid rgba(8, 8, 8, 0.288);
+}
+
+#file-input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background-color: rgba(255, 83, 3, 0.808);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .2s ease-in-out ;
+}
+
+#file-input::file-selector-button:hover {
+    background-color: rgba(175, 56, 1, 0.808);
+}
